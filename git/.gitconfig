@@ -1,0 +1,9 @@
+[core]
+	excludesfile = ~/.gitignore
+	editor = vim
+	pager = lv -c
+[user]
+	name = Yoshiaki Murakami
+	email = info@ysakmrkm.com
+[color]
+	ui = auto
