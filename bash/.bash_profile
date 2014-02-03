@@ -29,6 +29,9 @@ alias ls='ls -F -v'
 # homebrew
 PATH=/usr/local/bin:$PATH
 
+# npm
+PATH=/usr/local/share/npm/bin:$PATH
+
 # Macvim をアプリから読み込み
 PATH=/Applications/MacVim.app/Contents/MacOS:$PATH
 
