@@ -2,7 +2,13 @@
 	path = ~/.gitconfig.local
 [core]
 	excludesfile = ~/.gitignore
-	editor = vim
+	editor = vim -c \"set fenc=utf-8\"
 	pager = lv -c
 [color]
 	ui = auto
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
