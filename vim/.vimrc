@@ -136,8 +136,9 @@ NeoBundle 'hail2u/vim-css3-syntax'
 NeoBundle 'kchmck/vim-coffee-script'
 NeoBundle 'skammer/vim-css-color'
 
-"filetype plugin on
+filetype plugin on
 filetype indent on
+
 syntax on
 
 "autodate.vim(Kaoriya版に付属)
