@@ -68,10 +68,11 @@ set number
 set title
 " コマンド表示
 set showcmd
+" tmuxなら自動調整されるのでコメントアウトして様子見
 " 縦幅
-set lines=43
+"set lines=43
 " 横幅
-set columns=122
+"set columns=122
 " シンタックスハイライト
 syntax on
 " カーソル形状変更(iTerm2用?)
