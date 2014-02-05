@@ -173,7 +173,10 @@ au FileType unite nnoremap <silent> <buffer> <ESC><ESC> :q<CR>
 au FileType unite inoremap <silent> <buffer> <ESC><ESC> <ESC>:q<CR>
 
 " emmet-vim
-"  ドルマークが展開されないように
+"  dollar_expr : 1 デフォルト $が展開される
+"  dollar_expr : 0            $が展開されない
+"  filters : 'fc' デフォルト :の後に半角スペース挿入
+"  filters : ''              :の後に半角スペース無し
 let g:user_emmet_settings = {
 \  'html' : {
 \    'dollar_expr' : 0,
@@ -181,7 +184,15 @@ let g:user_emmet_settings = {
 \  'php' : {
 \    'dollar_expr' : 0,
 \  },
+\  'css' : {
+\    'filters' : '',
+\  },
+\  'scss' : {
+\    'filters' : '',
+\  },
 \}
+"  展開されるタグをデフォルトのHTML5からXHTMLに変更
+let g:emmet_html5 = 0
 
 " Powerline
 "  ステータスラインを表示
