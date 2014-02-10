@@ -2,3 +2,9 @@
 .netrwhist
 *~
 *.swp
+gruntfile.*
+config.rb
+package.json
+npm-debug.log
+
+/node_modules
