@@ -21,9 +21,9 @@ if ( ! test $TMUX ) && ( ! expr $TERM : "^screen" > /dev/null ) && which tmux > 
 fi
 
 export LANG=ja_JP.UTF-8
-alias ls='ls -F -v'
 export CLICOLOR=1
 export PS1='ysakmrkm@[\W]:'
+alias ls='ls -F -v -a'
 
 # PATH は後に書く方が先に適応される
 # homebrew
