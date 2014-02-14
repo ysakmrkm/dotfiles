@@ -27,7 +27,7 @@ alias ls='ls -F -v'
 
 # PATH は後に書く方が先に適応される
 # homebrew
-PATH=/usr/local/bin:$PATH
+PATH=/usr/local/bin:/usr/local/sbin:$PATH
 
 # npm
 PATH=/usr/local/share/npm/bin:$PATH
