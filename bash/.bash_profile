@@ -22,7 +22,7 @@ fi
 
 export LANG=ja_JP.UTF-8
 export CLICOLOR=yes
-export PS1='yoshiaki:\W \u\\$'
+export PS1='ysakmrkm: '
 alias ls='ls -F -v'
 
 # PATH は後に書く方が先に適応される
