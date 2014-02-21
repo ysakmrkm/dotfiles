@@ -124,6 +124,7 @@ endif
 call neobundle#rc(expand('~/.vim/bundle/'))
 
 "  プラグイン一覧
+NeoBundle 'vim-scripts/autodate.vim'
 NeoBundle 'Shougo/neobundle.vim'
 NeoBundle 'Shougo/vimproc'
 NeoBundle 'Shougo/unite.vim'
@@ -143,6 +144,7 @@ syntax on
 
 "autodate.vim(Kaoriya版に付属)
 let autodate_keyword_pre = "Last Change:	"
+let autodate_keyword_post = "."
 let autodate_format = "%Y/%m/%d %H:%M:%S"
 " unite.vim
 "  入力モードで開始する(要らないかも)
