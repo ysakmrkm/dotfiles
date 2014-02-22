@@ -17,3 +17,9 @@
 #1.7.6以降
 [merge]
 	ff = false
+#常に pull rebase する必要性は無いような気がするのでとりあえずコメントアウト
+#1.7.9以降
+#[pull]
+#	rebase = true
+[branch "master"]
+	rebase = true
