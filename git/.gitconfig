@@ -14,5 +14,6 @@
 	trustExitCode = true
 [push]
 	default = simple
-[alias]
-	nffmerge = 'merge --no-ff'
+#1.7.6以降
+[merge]
+	ff = false
