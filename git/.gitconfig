@@ -14,12 +14,11 @@
 	trustExitCode = true
 [push]
 	default = simple
-#1.7.6以降
 [merge]
+	#1.7.6以降
 	ff = false
-#常に pull rebase する必要性は無いような気がするのでとりあえずコメントアウト
-#1.7.9以降
-#[pull]
-#	rebase = true
+[pull]
+	#1.7.9以降
+	rebase = true
 [branch "master"]
 	rebase = true
