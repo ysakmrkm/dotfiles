@@ -91,6 +91,11 @@ set list
 set listchars=eol:$,tab:▸=
 " 単語途中で折り返しせずホワイトスペースで折り返しする
 set linebreak
+" 行番号左に1つ余白を追加する
+augroup numberwidth
+  autocmd!
+  autocmd BufEnter,WinEnter,BufWinEnter * let &l:numberwidth = len(line("$")) + 2
+augroup END
 
 "----------------------------------------------------------------------------------
 " ショートカット
