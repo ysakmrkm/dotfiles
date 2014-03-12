@@ -4,6 +4,7 @@
 	excludesfile = ~/.gitignore
 	editor = vim -c \"set fenc=utf-8\"
 	pager = lv -c
+	filemode = false
 [color]
 	ui = auto
 [diff]
