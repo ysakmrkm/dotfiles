@@ -222,6 +222,13 @@ let g:user_emmet_settings = {
 \      'baseurl':"<?php echo BASE_URL,'/'; ?>",
 \    },
 \  },
+\  'mt' : {
+\    'dollar_expr' : 0,
+\    'snippets' : {
+\      'baseurl':"<?php echo BASE_URL,'/'; ?>",
+\      'if':'<mt:if tag="${cursor}"></mt:if>',
+\    }
+\  },
 \  'css' : {
 \    'filters' : '',
 \  },
