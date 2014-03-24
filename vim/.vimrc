@@ -209,6 +209,7 @@ au FileType unite inoremap <silent> <buffer> <ESC><ESC> <ESC>:q<CR>
 "  filters : 'fc' デフォルト :の後に半角スペース挿入
 "  filters : ''              :の後に半角スペース無し
 let g:user_emmet_settings = {
+\  'lang' : 'ja',
 \  'html' : {
 \    'dollar_expr' : 0,
 \  },
