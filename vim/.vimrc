@@ -118,6 +118,30 @@ nnoremap <F6> i<C-R>=strftime("%Y/%m/%d %H:%M:%S")<CR><Esc>
 nnoremap <Space>r :<C-u>redraw!<Enter>
 
 "----------------------------------------------------------------------------------
+"操作系
+"----------------------------------------------------------------------------------
+" vimの挿入モードで一定以上入力がなかったら通常モードにしてみる (http://qiita.com/Echos/items/84e87274eef3eeab3b17)
+" インサートモードに入るか、入力を行った最後の時間を変数に保存
+autocmd! InsertEnter,InsertChange * :let s:last_action_time = localtime()
+autocmd! CursorMovedI * :call s:leave_insert_mode() | let s:last_action_time = localtime()
+autocmd! InsertCharPre * :call s:leave_insert_mode("call feedkeys('" . v:char . "', 'n')", "let v:char = '' ")
+
+" 最後の入力からこの秒数を超えた時間が経過していればInsertを終了する
+let s:wait_sec = 10
+function! s:leave_insert_mode(...)
+  let s:last_action_time = get(s:, "last_action_time", localtime())
+  let l:elapsed_sec = localtime() - s:last_action_time
+  " 経過時間が指定待ち時間を超えていれば
+  if l:elapsed_sec > s:wait_sec
+    call feedkeys("\<ESC>")
+    " 文字列として指定されたlambda式を実行
+    for action in a:000
+      execute action
+    endfor
+  endif
+endfunction
+
+"----------------------------------------------------------------------------------
 "プラグイン
 "----------------------------------------------------------------------------------
 filetype off
