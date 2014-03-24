@@ -212,9 +212,15 @@ let g:user_emmet_settings = {
 \  'lang' : 'ja',
 \  'html' : {
 \    'dollar_expr' : 0,
+\    'snippets' : {
+\      'baseurl':"<?php echo BASE_URL,'/'; ?>",
+\    },
 \  },
 \  'php' : {
 \    'dollar_expr' : 0,
+\    'snippets' : {
+\      'baseurl':"<?php echo BASE_URL,'/'; ?>",
+\    },
 \  },
 \  'css' : {
 \    'filters' : '',
