@@ -6,6 +6,8 @@ gruntfile.*
 config.rb
 package.json
 npm-debug.log
+validation-report.json
+validation-status.json
 
 /node_modules
 .sass-cache
