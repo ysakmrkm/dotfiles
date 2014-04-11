@@ -17,7 +17,9 @@ set fenc=utf-8
 " ターミナルの文字コード
 set termencoding=utf-8
 " 文字コード自動認識
-set fileencodings=iso-2022-jp,cp932,sjis,euc-jp,utf-8
+" iso-2022-jpが優先されるので変更してみる
+"set fileencodings=iso-2022-jp,cp932,sjis,euc-jp,utf-8
+set fileencodings=utf-8,iso-2022-jp,cp932,sjis,euc-jp
 " フォント指定
 set guifont=SauceCodePowerline-Light:h14
 set guifontwide=SauceCodePowerline-Light:h14
