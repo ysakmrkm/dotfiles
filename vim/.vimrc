@@ -217,15 +217,11 @@ let g:user_emmet_settings = {
 \    },
 \  },
 \  'php' : {
-\    'dollar_expr' : 0,
-\    'snippets' : {
-\      'baseurl':"<?php echo BASE_URL,'/'; ?>",
-\    },
+\    'extends' : 'html',
 \  },
 \  'mt' : {
-\    'dollar_expr' : 0,
+\    'extends' : 'html',
 \    'snippets' : {
-\      'baseurl':"<?php echo BASE_URL,'/'; ?>",
 \      'if':'<mt:if tag="${cursor}"></mt:if>',
 \    }
 \  },
