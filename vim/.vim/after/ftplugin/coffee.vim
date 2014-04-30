@@ -10,5 +10,7 @@ setlocal shiftwidth=2
 setlocal expandtab
 " オートインデント
 setlocal autoindent
+" 折り畳み
+setlocal foldmethod=marker commentstring=#%s
 
 let b:did_ftplugin_coffee = 1 
