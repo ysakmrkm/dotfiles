@@ -1,7 +1,7 @@
 .DS_Store
 .netrwhist
 *~
-*.swp
+*.sw*
 gruntfile.*
 config.rb
 package.json
