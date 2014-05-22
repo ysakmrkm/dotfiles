@@ -1,0 +1,38 @@
+update
+
+tap homebrew/binary
+tap ysakmrkm/homebrew-cask
+
+install git
+install git-flow
+install git-ftp
+install reattach-to-user-namespace
+install tmux
+install macvim
+install ruby
+
+install brew-cask
+
+cask install alfred
+cask install appcleaner
+cask install charles
+cask install cursorsense
+cask install day-o
+cask install divvy
+cask install dropbox
+cask install filezilla
+cask install firefox
+cask install google-chrome
+cask install google-japanese-ime
+cask install integrity
+cask install iterm2
+cask install keyremap4macbook
+cask install mou
+cask install p4merge
+cask install sourcetree
+cask install totalfinder
+cask install vmware-fusion
+
+linkapps
+
+cleanup
