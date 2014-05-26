@@ -7,11 +7,11 @@ tap caskroom/fonts
 install git
 install git-flow
 install git-ftp
-install reattach-to-user-namespace
 install tmux
-install macvim
-install ruby
+install reattach-to-user-namespace
+install macvim --with-python
 install python
+install ruby
 
 install brew-cask
 
