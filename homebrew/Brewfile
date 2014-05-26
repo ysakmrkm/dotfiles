@@ -19,7 +19,7 @@ cask install appcleaner
 cask install charles
 cask install cursorsense
 cask install day-o
-cask install divvy
+#cask install divvy
 cask install dropbox
 cask install filezilla
 cask install firefox
