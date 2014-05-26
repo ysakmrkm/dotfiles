@@ -29,6 +29,7 @@ cask install filezilla
 cask install firefox
 cask install google-chrome
 cask install google-japanese-ime
+cask install hyperswitch
 cask install integrity
 cask install iterm2
 cask install keyremap4macbook
