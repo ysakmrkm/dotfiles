@@ -10,6 +10,7 @@ install reattach-to-user-namespace
 install tmux
 install macvim
 install ruby
+install python
 
 install brew-cask
 
