@@ -40,3 +40,6 @@ PATH=/Applications/MacVim.app/Contents/MacOS:$PATH
 
 export PATH
 
+# brew cask
+export HOMEBREW_CASK_OPTS="--appdir=/Applications --caskroom=/usr/local/Caskroom"
+
