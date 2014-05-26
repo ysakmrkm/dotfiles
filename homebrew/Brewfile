@@ -12,6 +12,8 @@ install reattach-to-user-namespace
 install macvim --with-python
 install python
 install ruby
+#pythonのpygit2のインストールに必要
+install libgit2
 
 install brew-cask
 
