@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<root>
+<symbol_map type="KeyCode" name="[" value="0x1e" />
+<appdef>
+<appname>iTERM2</appname>
+<equal>com.googlecode.iterm2</equal>
+</appdef>
+<appdef>
+<appname>XCODE</appname>
+<equal>com.apple.dt.Xcode</equal>
+</appdef>
+
+<list>
+<item>
+<name>LeaveInsMode with EISUU(vim keybind apps)</name>
+<identifier>private.vim_keybind_apps_esc_with_eisuu</identifier>
+<only>iTERM2</only>
+<autogen>--KeyToKey-- KeyCode::ESCAPE, KeyCode::ESCAPE, KeyCode::JIS_EISUU</autogen>
+<autogen>--KeyToKey-- KeyCode::[, VK_CONTROL, KeyCode::[, VK_CONTROL, KeyCode::JIS_EISUU</autogen>
+<autogen>--KeyToKey-- KeyCode::C, VK_CONTROL, KeyCode::C, VK_CONTROL, KeyCode::JIS_EISUU</autogen>
+<autogen>--KeyToKey-- KeyCode::J, VK_CONTROL, KeyCode::J, VK_CONTROL, KeyCode::JIS_EISUU</autogen>
+</item>
+<item>
+<name>Application Key to Command_R</name>
+<identifier>private.application_key_to_command_R</identifier>
+<autogen>--KeyToKey-- KeyCode::PC_APPLICATION, KeyCode::COMMAND_R</autogen>
+</item>
+<item>
+<name>Insert Key to Command_R + R Key on Xcode(Run)</name>
+<identifier>private.insert_key_to_command_RKey_on_Xcode</identifier>
+<only>XCODE</only>
+<autogen>--KeyToKey-- KeyCode::PC_INSERT, KeyCode::R , ModifierFlag::COMMAND_L</autogen>
+</item>
+</list>
+</root>
