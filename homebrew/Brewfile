@@ -41,6 +41,8 @@ cask install sourcetree
 cask install totalfinder
 cask install vmware-fusion
 
+cask link alfred link
+
 linkapps
 
 cleanup
