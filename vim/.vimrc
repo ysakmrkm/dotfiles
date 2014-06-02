@@ -106,6 +106,10 @@ augroup END
 nnoremap <Space>. :<C-u>edit $MYVIMRC<Enter>
 " vimrc 反映
 nnoremap <Space>s. :<C-u>source $MYVIMRC<Enter>
+" gvimrc 編集
+nnoremap <Space>g. :<C-u>edit $MYGVIMRC<Enter>
+" gvimrc 反映
+nnoremap <Space>sg. :<C-u>source $MYGVIMRC<Enter>
 " USキーボード用
 "  ; タイプで : を入力
 noremap ; :
