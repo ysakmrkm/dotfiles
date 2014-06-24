@@ -25,14 +25,12 @@ cask install appcleaner
 cask install charles
 cask install cursorsense
 cask install day-o
-#cask install divvy
 cask install dropbox
 cask install filezilla
 cask install firefox
 cask install google-chrome
 cask install google-japanese-ime
 cask install hyperswitch
-cask install integrity
 cask install iterm2
 cask install keyremap4macbook
 cask install mou
