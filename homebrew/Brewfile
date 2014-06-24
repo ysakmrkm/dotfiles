@@ -34,6 +34,7 @@ cask install filezilla
 cask install firefox
 cask install google-chrome
 cask install google-japanese-ime
+cask install growlnotify
 cask install hyperswitch
 cask install iterm2
 cask install keyremap4macbook
@@ -41,6 +42,7 @@ cask install mou
 cask install p4merge
 cask install sourcetree
 cask install totalfinder
+cask install transmit
 cask install vmware-fusion
 
 cask link alfred link
