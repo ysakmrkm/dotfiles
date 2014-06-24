@@ -14,6 +14,7 @@ install node
 install python
 install ruby
 #pythonのpygit2のインストールに必要
+install mysql
 install libgit2
 
 install brew-cask
