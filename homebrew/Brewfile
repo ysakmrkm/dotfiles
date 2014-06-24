@@ -13,9 +13,11 @@ install macvim --with-python
 install node
 install python
 install ruby
-#pythonのpygit2のインストールに必要
 install mysql
+# pythonのpygit2のインストールに必要
 install libgit2
+# grunt-image 使用に必要
+install libjpeg libjpeg-turbo libpng
 
 install brew-cask
 
