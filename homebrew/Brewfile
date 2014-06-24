@@ -10,6 +10,7 @@ install git-ftp
 install tmux
 install reattach-to-user-namespace
 install macvim --with-python
+install node
 install python
 install ruby
 #pythonのpygit2のインストールに必要
