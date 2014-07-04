@@ -7,6 +7,7 @@ tap homebrew/dupes
 tap josegonzalez/homebrew-php
 tap caskroom/fonts
 
+install cpanminus
 install git
 install git-flow
 install git-ftp
