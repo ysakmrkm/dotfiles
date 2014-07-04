@@ -2,6 +2,9 @@ update
 
 tap homebrew/binary
 tap ysakmrkm/homebrew-cask
+# PHP
+tap homebrew/dupes
+tap josegonzalez/homebrew-php
 tap caskroom/fonts
 
 install git
