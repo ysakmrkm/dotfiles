@@ -14,8 +14,11 @@ install git-ftp
 install tmux
 install reattach-to-user-namespace
 install macvim --with-python
+# phpmyadminのインストールに必要
+install mcrypt autoconf
 install node
 install python
+install phpmyadmin
 install ruby
 install mysql
 # pythonのpygit2のインストールに必要
