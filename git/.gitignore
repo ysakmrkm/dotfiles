@@ -9,6 +9,7 @@ npm-debug.log
 validation-report.json
 validation-status.json
 .git-ftp-ignore
+npm-link.sh
 
 /node_modules
 .sass-cache
