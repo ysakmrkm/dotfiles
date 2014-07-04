@@ -11,6 +11,7 @@ install cpanminus
 install git
 install git-flow
 install git-ftp
+install jq
 # pythonのpygit2のインストールに必要
 install libgit2
 # grunt-image使用に必要
