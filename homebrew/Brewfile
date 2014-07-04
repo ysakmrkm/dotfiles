@@ -11,20 +11,20 @@ install cpanminus
 install git
 install git-flow
 install git-ftp
-install tmux
-install reattach-to-user-namespace
+# pythonのpygit2のインストールに必要
+install libgit2
+# grunt-image使用に必要
+install libjpeg libjpeg-turbo libpng
 install macvim --with-python
 # phpmyadminのインストールに必要
 install mcrypt autoconf
+install mysql
 install node
 install python
 install phpmyadmin
+install reattach-to-user-namespace
 install ruby
-install mysql
-# pythonのpygit2のインストールに必要
-install libgit2
-# grunt-image 使用に必要
-install libjpeg libjpeg-turbo libpng
+install tmux
 
 install brew-cask
 
