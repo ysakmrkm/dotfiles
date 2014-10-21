@@ -13,5 +13,5 @@ npm-link.sh
 .project
 .settings
 
-/node_modules
+node_modules/
 .sass-cache
