@@ -26,6 +26,7 @@ install node
 install python
 install phpmyadmin
 install reattach-to-user-namespace
+install redis
 install ruby
 install tmux
 
