@@ -3,6 +3,11 @@ if [ -f ~/.bashrc ] ; then
 	. ~/.bashrc
 fi
 
+export LANG=ja_JP.UTF-8
+export CLICOLOR=1
+export PS1='ysakmrkm@[\W]:'
+alias ls='ls -F -v -a'
+
 # 起動時に tmux 起動
 if ( ! test $TMUX ) && ( ! expr $TERM : "^screen" > /dev/null ) && which tmux > /dev/null; then
 	if ( tmux has-session ); then
@@ -19,11 +24,6 @@ if ( ! test $TMUX ) && ( ! expr $TERM : "^screen" > /dev/null ) && which tmux > 
 		tmux
 	fi
 fi
-
-export LANG=ja_JP.UTF-8
-export CLICOLOR=1
-export PS1='ysakmrkm@[\W]:'
-alias ls='ls -F -v -a'
 
 # PATH は後に書く方が先に適応される
 # homebrew
