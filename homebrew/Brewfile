@@ -17,6 +17,8 @@ install libgit2
 # grunt-image使用に必要
 install libjpeg libjpeg-turbo libpng
 install macvim --with-python
+# git pagerで利用
+install lv
 # phpmyadminのインストールに必要
 install mcrypt autoconf
 install mysql
