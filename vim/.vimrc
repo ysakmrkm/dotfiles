@@ -102,6 +102,21 @@ augroup numberwidth
   autocmd!
   autocmd BufEnter,WinEnter,BufWinEnter * let &l:numberwidth = len(line("$")) + 2
 augroup END
+" 全角文字をハイライト表示
+function! Zenkaku()
+    highlight Zenkaku cterm=reverse ctermfg=DarkMagenta gui=reverse guifg=DarkMagenta
+endfunction
+
+if has('syntax')
+    augroup Zenkaku
+        autocmd!
+        autocmd ColorScheme       * call Zenkaku()
+        autocmd VimEnter,WinEnter * let w:m1 = matchadd("Zenkaku", '[　０１２３４５６７８９]')
+        autocmd VimEnter,WinEnter * let w:m2 = matchadd("Zenkaku", '[ａｂｃｄｅｆｇｈｉｊｋｌｍｎｏｐｑｒｓｔｕｖｗｘｙｚ]')
+        autocmd VimEnter,WinEnter * let w:m3 = matchadd("Zenkaku", '[ＡＢＣＤＥＦＧＨＩＪＫＬＭＮＯＰＱＲＳＴＵＶＷＸＹＺ]')
+    augroup END
+    call Zenkaku()
+endif
 
 "----------------------------------------------------------------------------------
 " ショートカット
