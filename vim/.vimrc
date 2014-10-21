@@ -23,6 +23,8 @@ set fileencodings=utf-8,iso-2022-jp,cp932,sjis,euc-jp
 " フォント指定
 set guifont=SauceCodePowerline-Light:h14
 set guifontwide=SauceCodePowerline-Light:h14
+" 全角記号表示崩れ対策
+set ambiwidth=double
 
 "----------------------------------------------------------------------------------
 " 検索
