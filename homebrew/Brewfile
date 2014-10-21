@@ -51,6 +51,7 @@ cask install iterm2
 cask install keyremap4macbook
 cask install mou
 cask install p4merge
+cask install sophos-anti-virus-home-edition
 cask install sourcetree
 cask install totalfinder
 cask install transmit
