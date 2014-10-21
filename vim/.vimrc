@@ -141,6 +141,8 @@ vnoremap <silent> <C-P> "0p<CR>
 nnoremap <F6> i<C-R>=strftime("%Y/%m/%d %H:%M:%S")<CR><Esc>
 " redraw!
 nnoremap <Space>r :<C-u>redraw!<Enter>
+" 行連結 J を半角スペース無しの gJ に
+nnoremap J gJ
 
 "----------------------------------------------------------------------------------
 "操作系
