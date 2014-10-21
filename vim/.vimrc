@@ -66,6 +66,8 @@ set ttyfast
 set lazyredraw
 " カラースキーム選択
 colorscheme molokai
+" 透過度
+set transparency=0
 " 行番号表示
 set number
 " タイトル表示
