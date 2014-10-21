@@ -10,6 +10,8 @@ validation-report.json
 validation-status.json
 .git-ftp-ignore
 npm-link.sh
+.project
+.settings
 
 /node_modules
 .sass-cache
