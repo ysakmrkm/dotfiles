@@ -192,6 +192,8 @@ NeoBundle 'hail2u/vim-css3-syntax'
 "NeoBundle 'taichouchou2/vim-javascript'
 NeoBundle 'kchmck/vim-coffee-script'
 NeoBundle 'skammer/vim-css-color'
+NeoBundle 'elzr/vim-json'
+NeoBundle 'digitaltoad/vim-jade'
 
 filetype plugin on
 filetype indent on
