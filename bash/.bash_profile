@@ -9,20 +9,34 @@ export PS1='ysakmrkm@[\W]:'
 alias ls='ls -F -v -a'
 
 # 起動時に tmux 起動
-if ( ! test $TMUX ) && ( ! expr $TERM : "^screen" > /dev/null ) && which tmux > /dev/null; then
-	if ( tmux has-session ); then
-		session=`tmux list-sessions | grep -e '^[0-9].*]$' | head -n 1 | sed -e 's/^\([0-9]\+\).*$/\1/'`
-		if [ -n "$session" ]; then
-			echo "Attache tmux session $session."
-			tmux attach-session -t $session
-		else
-			echo "Session has been already attached."
-			tmux list-sessions
-		fi
-	else
-		echo "Create new tmux session."
-		tmux
-	fi
+#if ( ! test $TMUX ) && ( ! expr $TERM : "^screen" > /dev/null ) && which tmux > /dev/null; then
+#	if ( tmux has-session ); then
+#		session=`tmux list-sessions | grep -e '^[0-9].*]$' | head -n 1 | sed -e 's/^\([0-9]\+\).*$/\1/'`
+#		if [ -n "$session" ]; then
+#			echo "Attache tmux session $session."
+#			tmux attach-session -t $session
+#		else
+#			echo "Session has been already attached."
+#			tmux list-sessions
+#		fi
+#	else
+#		echo "Create new tmux session."
+#		tmux
+#	fi
+#fi
+
+if [ -z "$TMUX" -a -z "$STY" ]; then
+    if type tmuxx >/dev/null 2>&1; then
+        tmuxx
+    elif type tmux >/dev/null 2>&1; then
+        if tmux has-session && tmux list-sessions | /usr/bin/grep -qE '.*]$'; then
+            tmux attach && echo "tmux attached session "
+        else
+            tmux new-session && echo "tmux created new session"
+        fi
+    #elif type screen >/dev/null 2>&1; then
+    #    screen -rx || screen -D -RR
+    fi
 fi
 
 # PATH は後に書く方が先に適応される
