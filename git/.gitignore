@@ -12,6 +12,7 @@ validation-status.json
 npm-link.sh
 .project
 .settings
+gulpfile.*
 
 logs/
 
