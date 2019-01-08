@@ -14,7 +14,7 @@
 <item>
 <name>LeaveInsMode with EISUU(vim keybind apps)</name>
 <identifier>private.vim_keybind_apps_esc_with_eisuu</identifier>
-<only>iTERM2</only>
+<only>iTERM2,Atom</only>
 <autogen>--KeyToKey-- KeyCode::ESCAPE, KeyCode::ESCAPE, KeyCode::JIS_EISUU</autogen>
 <autogen>--KeyToKey-- KeyCode::[, VK_CONTROL, KeyCode::[, VK_CONTROL, KeyCode::JIS_EISUU</autogen>
 <autogen>--KeyToKey-- KeyCode::C, VK_CONTROL, KeyCode::C, VK_CONTROL, KeyCode::JIS_EISUU</autogen>
