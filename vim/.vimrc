@@ -50,7 +50,7 @@ set autoindent
 set hidden
 " ヤンクしたものをクリップボードにコピー
 "  unnamed    : ヤンクしたものをクリップボードにコピー
-"  autoselect : 選択されたテキストをクリップボードに 
+"  autoselect : 選択されたテキストをクリップボードに
 "set clipboard=unnamed,autoselect
 set clipboard=unnamed
 
@@ -267,6 +267,6 @@ let g:emmet_html5 = 0
 " Powerline
 "  ステータスラインを表示
 set laststatus=2
-set rtp+=/usr/local/lib/python2.7/site-packages/powerline/bindings/vim
+set rtp+=~/Library/Python/2.7/lib/python/site-packages/powerline/bindings/vim
 let g:Powerline_symbols = 'fancy'
 set noshowmode
