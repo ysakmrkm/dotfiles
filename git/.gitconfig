@@ -5,13 +5,14 @@
 	editor = vim -c \"set fenc=utf-8\"
 	pager = lv -c
 	filemode = false
+	ignorecase = true
 [color]
 	ui = auto
 [diff]
 	tool = p4mergetool
 [difftool "p4mergetool"]
 	cmd = /Applications/p4merge.app/Contents/Resources/launchp4merge $LOCAL $REMOTE
-	path = 
+	path =
 [push]
 	default = simple
 [merge]
@@ -27,6 +28,32 @@
 [branch "master"]
 	rebase = true
 [filter "lfs"]
-	clean = git-lfs clean %f
-	smudge = git-lfs smudge %f
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
 	required = true
+[alias]
+	aa = add --all
+	c = commit
+	cae = commit --allow-empty
+	caem = commit --allow-empty -m
+	cam = commit --amend
+	camal = commit --amend -a
+	camalm = commit --amend -am
+	camm = commit --amend -m
+	camae = commit --amend --allow-empty
+	camaem = commit --amend --allow-empty -m
+	cal = commit -a
+	calm = commit -am
+	p = push
+	start = "!f () { git commit --allow-empty -m \"`[$1 == ''] && echo $1 || echo [ starts $1 ]`[WIP] Start at `date`\" $2;}; f"
+	now = !"str=`git log --pretty=format:%cr -1` && echo ${str}"
+	stop = "!f () { str=`git log --pretty=format:%cr -1` && git commit --allow-empty -m \"`[$1 == ''] && echo $1 || echo [ $1 ]`[WIP][${str}] Stop at `date` \" $2;}; f"
+	end = !"git commit --allow-empty -m \"[WIP] End at `date`\""
+	end = "!f () { git commit --allow-empty -m \"`[$1 == ''] && echo $1 || echo [ finishes $1 ]`[WIP] End at `date`\" $2;}; f"
+[ghq]
+	root = ~/Sites
+	root = ~/git
+[credential]
+	helper = cache --timeout=3600
+[rebase]
+	autostash = true
