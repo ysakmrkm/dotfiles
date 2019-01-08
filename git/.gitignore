@@ -13,8 +13,18 @@ npm-link.sh
 .project
 .settings
 gulpfile.*
+.editorconfig
+.git-ftp-tmp
+bower.json
+.scss-lint.yml
+.pug-lintrc
+coffeelint.json
+.csscomb.json
+.stylelintrc
+_sass-image.scss
 
 logs/
 
 node_modules/
+bower_components/
 .sass-cache
