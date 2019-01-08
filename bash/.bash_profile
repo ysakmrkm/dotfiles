@@ -43,6 +43,9 @@ fi
 # homebrew
 PATH=/usr/local/bin:/usr/local/sbin:$PATH
 
+# Mysql
+PATH=/usr/local/mysql/bin:$PATH
+
 # npm
 PATH=/usr/local/share/npm/bin:$PATH
 
@@ -57,3 +60,5 @@ export PATH
 # brew cask
 export HOMEBREW_CASK_OPTS="--appdir=/Applications --caskroom=/usr/local/Caskroom"
 
+# PHP
+export PATH="$(brew --prefix homebrew/php/php55)/bin:$PATH"
