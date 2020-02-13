@@ -22,6 +22,8 @@ coffeelint.json
 .csscomb.json
 .stylelintrc
 _sass-image.scss
+.postcss-sorting.json
+.browserslistrc
 
 logs/
 
