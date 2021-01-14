@@ -1,0 +1,10 @@
+{
+    "telemetry.enableTelemetry": false,
+    "workbench.startupEditor": "newUntitledFile",
+    "workbench.colorTheme": "Monokai",
+    "terminal.integrated.fontFamily": "Source Code Pro for Powerline",
+    "terminal.external.osxExec": "iTerm.app",
+    "terminal.explorerKind": "external",
+    "vim.useSystemClipboard": true,
+    "vim.foldfix": true
+}

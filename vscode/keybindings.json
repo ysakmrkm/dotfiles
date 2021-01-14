@@ -1,0 +1,21 @@
+// 既定値を上書きするには、このファイル内にキー バインドを挿入します
+[
+    {
+        "key": "ctrl+shift+tab",
+        "command": "workbench.action.previousEditor"
+    },
+    {
+        "key": "ctrl+tab",
+        "command": "workbench.action.nextEditor"
+    },
+    {
+        "key": "cmd+alt+shift+[",
+        "when": "editorTextFocus && foldingEnabled",
+        "command": "editor.foldAll"
+    },
+    {
+        "key": "cmd+alt+shift+]",
+        "when": "editorTextFocus && foldingEnabled",
+        "command": "editor.unfoldAll"
+    }
+]
